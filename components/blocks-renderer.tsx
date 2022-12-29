@@ -13,7 +13,7 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
             switch (block.__typename) {
               case "PageBlocksContent":
                 // typing is string, whereas 'default' | 'primary' would be preferred
-                block.color
+                console.log(block.color)
                 return (
                   <div
                     data-tinafield={`blocks.${i}`}
